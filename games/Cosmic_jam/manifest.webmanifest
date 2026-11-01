@@ -1,0 +1,12 @@
+{
+  "name": "Cosmsic Jam",
+  "short_name": "Cosmsic Jam",
+  "id": "com.example.gamename",
+  "description": "Игра создана только для обучения.\nПродолжения не будет",
+  "orientation": "any",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "black",
+  "categories": ["games", "entertainment"],
+  "icons": []
+}

@@ -1,0 +1,12 @@
+{
+  "name": "SOZDANIE ROOMS",
+  "short_name": "SOZDANIE ROOMS",
+  "id": "com.example.gamename",
+  "description": "",
+  "orientation": "any",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "black",
+  "categories": ["games", "entertainment"],
+  "icons": []
+}
