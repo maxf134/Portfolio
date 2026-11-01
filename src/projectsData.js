@@ -1,0 +1,225 @@
+// ============================================================================
+// 1. КОНФИГУРАЦИЯ РУБРИК И 3D-СОСТОЯНИЙ
+// ============================================================================
+export const CATEGORY_CONFIG = {
+  'Все': {
+    id: 'Все',
+    sectorName: 'ПОЛНЫЙ АРХИВ',
+    label: 'ВСЕ ПРОЕКТЫ',
+    color: '#00f0ff',
+    secondaryColor: '#7000ff',
+    camPos: [0, 0, 7.5],
+    coreScale: 1.0,
+    rotSpeed: 1.0,
+    subtitle: 'ИНТЕРАКТИВНЫЕ ИГРЫ НА GDEVELOP 5, ВЕБ-ПРИЛОЖЕНИЯ НА REACT + TYPESCRIPT И МОУШН-ГРАФИКА'
+  },
+  'Игры': {
+    id: 'Игры',
+    sectorName: 'ИГРОВОЙ ОТСЕК',
+    label: 'ИГРЫ // GDEVELOP 5',
+    color: '#ff0055',
+    secondaryColor: '#ff7700',
+    camPos: [-2.2, 0.6, 5.2],
+    coreScale: 1.35,
+    rotSpeed: 2.4,
+    subtitle: 'АВТОРСКИЕ 2D И АРКАДНЫЕ HTML5-ИГРЫ С ЗАПУСКОМ ПРЯМО В ОКНЕ ТЕРМИНАЛА'
+  },
+  'Приложения': {
+    id: 'Приложения',
+    sectorName: 'ВЕБ-РАЗРАБОТКА',
+    label: 'ПРИЛОЖЕНИЯ // REACT',
+    color: '#00ff88',
+    secondaryColor: '#0066ff',
+    camPos: [2.2, -0.5, 5.5],
+    coreScale: 0.85,
+    rotSpeed: 0.6,
+    subtitle: 'ИНТЕРАКТИВНЫЕ МИНИ-ПРИЛОЖЕНИЯ И ВИЗУАЛИЗАЦИИ НА REACT, TYPESCRIPT И D3'
+  },
+  'Моушн': {
+    id: 'Моушн',
+    sectorName: 'ВИЗУАЛЬНЫЙ ЦЕХ',
+    label: 'МОУШН // AFTER EFFECTS',
+    color: '#ffb800',
+    secondaryColor: '#ff00aa',
+    camPos: [0, 1.8, 6.0],
+    coreScale: 1.15,
+    rotSpeed: 1.5,
+    subtitle: 'МОУШН-ВИДЕО, АНИМАЦИЯ ЛОГОТИПОВ, ГЛИТЧ-ЭФФЕКТЫ И ЗАСТАВКИ В AFTER EFFECTS'
+  }
+};
+
+// ============================================================================
+// 2. СПИСОК ТВОИХ ПРОЕКТОВ (ДОБАВЛЯЙ НОВЫЕ РАБОТЫ СЮДА)
+// ============================================================================
+export const projects = [
+  {
+    id: 'rooms',
+    title: 'Rooms',
+    type: 'game',
+    category: 'Игры',
+    description: 'Процедурная генерация комнат в 2D',
+    thumbnail: '/thumbnails/Rooms.png',
+    embed: {
+      type: 'iframe',
+      url: '/games/Rooms/index.html'
+    },
+    tags: ['GDevelop 5', 'HTML5'],
+    year: '2026',
+  },
+  {
+    id: 'cosmic_jam',
+    title: 'Cosmic Jam',
+    type: 'game',
+    category: 'Игры',
+    description: 'Космические войны',
+    thumbnail: '/thumbnails/cosmic.png',
+    embed: {
+      type: 'iframe',
+      url: '/games/Cosmic_jam/index.html'
+    },
+    tags: ['GDevelop 5', 'HTML5'],
+    year: '2026',
+  },
+  {
+    id: 'Proizvodstvennaya_liniya',
+    title: 'Производственная линия',
+    type: 'react-app',
+    category: 'Приложения',
+    description: 'Мини-приложение на React + TypeScript для визуализации производственной линии.',
+    thumbnail: '/thumbnails/PL.png',
+    embed: { type: 'external', url: 'https://maxf134.github.io/PL/' },
+    tags: ['React', 'TypeScript', 'D3'],
+    year: '2026',
+  },
+  {
+    id: 'Car_game',
+    title: 'Car Game',
+    type: 'react-app',
+    category: 'Приложения',
+    description: 'Мини-приложение на React + TypeScript для визуализации парка.',
+    thumbnail: '/thumbnails/car.png',
+    embed: { type: 'external', url: 'https://maxf134.github.io/Car_Game/' },
+    tags: ['React', 'TypeScript', 'D3'],
+    year: '2026',
+  },
+  {
+    id: 'Komix',
+    title: 'Komix',
+    type: 'react-app',
+    category: 'Приложения',
+    description: 'Мини-приложение на React + TypeScript для рисования комиксов.',
+    thumbnail: '/thumbnails/komix.png',
+    embed: { type: 'external', url: 'https://maxf134.github.io/Komix/' },
+    tags: ['React', 'TypeScript', 'D3'],
+    year: '2026',
+  },
+  {
+    id: 'Music_Visualizator',
+    title: 'Music_Visualizator',
+    type: 'react-app',
+    category: 'Приложения',
+    description: 'Мини-приложение на React + TypeScript для визуализации музыки.',
+    thumbnail: '/thumbnails/visual.png',
+    embed: { type: 'external', url: 'https://maxf134.github.io/VizualPlayer/' },
+    tags: ['React', 'TypeScript', 'D3'],
+    year: '2026',
+  },
+  {
+    id: 'Logo_gold',
+    title: 'Logo Gold',
+    type: 'motion-video',
+    category: 'Моушн',
+    description: 'Моушн-видео с партиклами. After Effects.',
+    thumbnail: '/thumbnails/GOLD.png',
+    embed: {
+      type: 'video',
+      url: '/video/RENDER LOGO_FHD.mp4',
+    },
+    tags: ['After Effects'],
+    year: '2024',
+  },
+  {
+    id: 'Granzh',
+    title: 'Grunge',
+    type: 'motion-video',
+    category: 'Моушн',
+    description: 'Моушн-видео. After Effects.',
+    thumbnail: '/thumbnails/granzh.png',
+    embed: {
+      type: 'video',
+      url: '/video/Animation Vertical.mp4',
+    },
+    tags: ['After Effects'],
+    year: '2024',
+  },
+  {
+    id: 'Kontur',
+    title: 'Kontur',
+    type: 'motion-video',
+    category: 'Моушн',
+    description: 'Моушн-видео. After Effects.',
+    thumbnail: '/thumbnails/Kontur.png',
+    embed: {
+      type: 'video',
+      url: '/video/Comp 01_2.mp4',
+    },
+    tags: ['After Effects'],
+    year: '2024',
+  },
+  {
+    id: 'Zerkalo',
+    title: 'Zerkalo',
+    type: 'motion-video',
+    category: 'Моушн',
+    description: 'Моушн-видео. After Effects.',
+    thumbnail: '/thumbnails/zerkalo.png',
+    embed: {
+      type: 'video',
+      url: '/video/Final Render_3.mp4',
+    },
+    tags: ['After Effects'],
+    year: '2024',
+  },
+  {
+    id: 'glitch1',
+    title: 'Glitch 1',
+    type: 'motion-video',
+    category: 'Моушн',
+    description: 'Моушн-видео. After Effects.',
+    thumbnail: '/thumbnails/glitch1.png',
+    embed: {
+      type: 'video',
+      url: '/video/Final_2.mp4',
+    },
+    tags: ['After Effects'],
+    year: '2024',
+  },
+  {
+    id: 'glitch2',
+    title: 'Glitch 2',
+    type: 'motion-video',
+    category: 'Моушн',
+    description: 'Моушн-видео. After Effects.',
+    thumbnail: '/thumbnails/glitch2.png',
+    embed: {
+      type: 'video',
+      url: '/video/Glitch.mp4',
+    },
+    tags: ['After Effects'],
+    year: '2024',
+  },
+  {
+    id: 'zastavka',
+    title: 'Заставка',
+    type: 'motion-video',
+    category: 'Моушн',
+    description: 'Моушн-видео. After Effects.',
+    thumbnail: '/thumbnails/zastavka.png',
+    embed: {
+      type: 'video',
+      url: '/video/Zastavka.mp4',
+    },
+    tags: ['After Effects'],
+    year: '2024',
+  },
+];
